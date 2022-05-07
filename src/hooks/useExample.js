@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import { example } from "../helpers/example";
 
 export default function useExample() {
-  [ exampleState, setExampleState ] = useState('');
+  const [ exampleState, setExampleState ] = useState('');
 
   useEffect(() => {
     setExampleState( 'Hello world' );
